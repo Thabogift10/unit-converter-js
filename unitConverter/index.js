@@ -15,16 +15,13 @@ submit.addEventListener("click",()=>{
         temp = container.value;
         temp = temp * 9/5 + 32;
         results.textContent = temp + "°F";
-        h1.textContent = "Unit Convertion: Degrees To Fahnrenheit";
+        h1.textContent = "";
     }
     if(check2.checked){
         temp = container.value;
         temp = (temp-32) * (5/9);
         results.textContent = temp + "°C";
-        h1.textContent = "Unit Convertion: Fahnrenheit To Degrees";
-    }
-    else{
-        h1.textContent = "Select Unit";
+        h1.textContent = "";
     }
 })
 clearBtn.addEventListener("click",()=>{
